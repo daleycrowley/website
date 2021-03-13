@@ -1,0 +1,258 @@
+/* Themes */
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.horizontalcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fullheight {
+    height: 100%;
+}
+
+body {
+    background-color: #ffe8d6;
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 99;
+}
+
+.navbar a {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 18px;
+    text-align: center;
+    color: cadetblue;
+}
+
+.navbar a:hover {
+    background: cornflowerblue;
+    color: black;
+}
+
+.navbar h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.transition {
+    transition: opacity 1s ease-in;
+}
+
+
+/* About me section */
+
+#headshot {
+    margin-right: 14px;
+}
+
+#aboutme {
+    background-color: #FFEDD8;
+    padding-top: 40px;
+}
+
+.thoughtbubble {
+    padding: 40px;
+    background-color: #FFFFFF;
+}
+
+
+/*experience section*/
+
+#experience {
+    background-color: #FFFFFF;
+}
+
+#experience .experiencebox {
+    margin: 8px;
+}
+
+#experience .experiencebox .experiencetop {
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    transform: translateY(52%);
+    transition: 0.5s;
+    background-color: #e0c0a9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#experience .experiencebox .experiencebody {
+    z-index: 1;
+    box-sizing: border-box;
+    padding: .5em;
+    height: 200px;
+    background: white;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.056), 0 6.7px 5.3px rgba(0, 0, 0, 0.081), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.119), 0 41.8px 33.4px rgba(0, 0, 0, 0.144), 0 100px 80px rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+#experience .experiencebox .experiencebody .experienceimage {
+    margin: 0;
+}
+
+#experience .experiencebox .experiencebody .experiencetext {
+    width: 170px;
+    height: 170px;
+    font-size: 5px;
+}
+
+#experience .experiencebox .experiencebody .btn {
+    padding: 0.375em 0.75em;
+    color: black;
+    text-decoration: none;
+    line-height: 1.5;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    transition: 0.5s;
+    display: none;
+}
+
+#experience .experiencebox .experiencebody .btn:hover {
+    color: white;
+    background: black;
+}
+
+#experience .experiencebox:hover .experiencebody .btn {
+    display: block;
+}
+
+#experience .experiencebox:hover .experiencetop {
+    transform: translateY(2%);
+    height: 40px;
+}
+
+#experience .experiencebox:hover .experiencebody .experiencetext {
+    font-size: 12px;
+}
+
+#experience .experiencebox:hover .experiencebody {
+    transform: translateY(0);
+    height: fit-content;
+}
+
+
+/* Hobbies section */
+
+#hobbies {
+    background-color: #FFEDD8;
+}
+
+.hobbiesBox {
+    background-color: #e0c0a9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hobbyParent {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.hobbyChild {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+.hideHobby {
+    opacity: 0;
+}
+
+.showHobby {
+    opacity: 1;
+}
+
+
+/* Work Examples */
+
+#portfolio {
+    background-color: #FFFFFF;
+}
+
+.collapsibleContainer {
+    margin-top: 30px;
+}
+
+.collapsible {
+    background-color: #ebd7c9;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.activePortfolio,
+.collapsible:hover {
+    background-color: #e0c0a9;
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.portfolioContent {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.activePortfolio:after {
+    content: "\2796";
+}
