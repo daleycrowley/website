@@ -15,14 +15,14 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.horizontalcontent {
+.horizontalContent {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.fullheight {
+.fullHeight {
     height: 100%;
 }
 
@@ -31,9 +31,14 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 800px) {
+    section {
+        min-height: 100vh;
+    }
+}
+
 section {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar {
@@ -63,6 +68,22 @@ section {
     color: black;
 }
 
+@media screen and (max-width: 500px) {
+    .navbar h1 {
+        font-size: 1.3em;
+    }
+    .navbar a {
+        float: none;
+        position: relative;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .navbar h1 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -78,12 +99,12 @@ section {
     margin-right: 14px;
 }
 
-#aboutme {
+#aboutMe {
     background-color: #FFEDD8;
     padding-top: 40px;
 }
 
-.thoughtbubble {
+.thoughtBubble {
     padding: 40px;
     background-color: #FFFFFF;
 }
@@ -95,11 +116,11 @@ section {
     background-color: #FFFFFF;
 }
 
-#experience .experiencebox {
+#experience .experienceBox {
     margin: 8px;
 }
 
-#experience .experiencebox .experiencetop {
+#experience .experienceBox .experienceTop {
     position: relative;
     z-index: 2;
     height: 200px;
@@ -114,7 +135,7 @@ section {
     flex-direction: column;
 }
 
-#experience .experiencebox .experiencebody {
+#experience .experienceBox .experienceBody {
     z-index: 1;
     box-sizing: border-box;
     padding: .5em;
@@ -125,17 +146,17 @@ section {
     transition: 0.5s;
 }
 
-#experience .experiencebox .experiencebody .experienceimage {
+#experience .experienceBox .experienceBody .experienceImage {
     margin: 0;
 }
 
-#experience .experiencebox .experiencebody .experiencetext {
+#experience .experienceBox .experienceBody .experienceText {
     width: 170px;
     height: 170px;
     font-size: 5px;
 }
 
-#experience .experiencebox .experiencebody .btn {
+#experience .experienceBox .experienceBody .btn {
     padding: 0.375em 0.75em;
     color: black;
     text-decoration: none;
@@ -146,25 +167,25 @@ section {
     display: none;
 }
 
-#experience .experiencebox .experiencebody .btn:hover {
+#experience .experienceBox .experienceBody .btn:hover {
     color: white;
     background: black;
 }
 
-#experience .experiencebox:hover .experiencebody .btn {
+#experience .experienceBox:hover .experienceBody .btn {
     display: block;
 }
 
-#experience .experiencebox:hover .experiencetop {
+#experience .experienceBox:hover .experienceTop {
     transform: translateY(2%);
     height: 40px;
 }
 
-#experience .experiencebox:hover .experiencebody .experiencetext {
+#experience .experienceBox:hover .experienceBody .experienceText {
     font-size: 12px;
 }
 
-#experience .experiencebox:hover .experiencebody {
+#experience .experienceBox:hover .experienceBody {
     transform: translateY(0);
     height: fit-content;
 }
@@ -173,7 +194,7 @@ section {
 /* Hobbies section */
 
 #hobbies {
-    background-color: #FFEDD8;
+    background-color: #FFFFFF;
 }
 
 .hobbiesBox {
@@ -206,11 +227,60 @@ section {
     opacity: 1;
 }
 
+#hobbies img {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 250px;
+    width: 250px;
+}
 
-/* Work Examples */
+#nailsReveal {
+    background-image: url("../assets/nails.jpg");
+}
+
+#vintageReveal {
+    background-image: url("../assets/vintage.png");
+}
+
+#embroideryReveal {
+    background-image: url("../assets/embroidery.jpg");
+}
+
+.hobbyRevealContainer {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hobbyRevealContainer button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #ebd7c9;
+    outline: none;
+    border: none;
+}
+
+
+/* Portfolio */
 
 #portfolio {
-    background-color: #FFFFFF;
+    background-color: #FFEDD8;
+}
+
+.videoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoContainer div {
+    margin: 10px;
 }
 
 .collapsibleContainer {
@@ -234,12 +304,26 @@ section {
     background-color: #e0c0a9;
 }
 
+.socialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialContainer img {
+    margin: 10px;
+}
+
+.socialContainer p {
+    text-align: center;
+}
+
 
 /* Style the collapsible content. Note: hidden by default */
 
 .portfolioContent {
     padding: 0 18px;
-    background-color: white;
+    background-color: #FFEDD8;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -255,4 +339,15 @@ section {
 
 .activePortfolio:after {
     content: "\2796";
+}
+
+
+/* photo section */
+
+#photoSection {
+    background-color: #FFEDD8;
+}
+
+.photoImage {
+    margin: 3;
 }
