@@ -1,2 +1,4 @@
 # website
-personal website
+Personal website
+
+`gulp build`

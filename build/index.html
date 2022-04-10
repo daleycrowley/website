@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daley Crowley | Portfolio template</title>
+    <meta name="description" content="Daley Crowley Personal Site">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/screen.min.css">
+    <link rel="stylesheet" href="static/css/custom.min.css">
+    <script src="static/js/head.min.js"></script>
+  </head>
+  <body>
+    <script>
+      progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+      if(window.attachEvent) {
+          window.attachEvent('onload', function(){ progressJs().end(); });
+      } else {
+          if(window.onload) {
+              var curronload = window.onload;
+              var newonload = function() {
+                  curronload();
+                  progressJs().end();
+              };
+              window.onload = newonload;
+          } else {
+              window.onload = function(){ progressJs().end(); };
+          }
+      }
+    </script>
+    <!-- Header-->
+    <header class="main-header">
+      <div class="first-nav">
+        <div class="container"><a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a></div>
+      </div>
+      <div class="second-nav js-nav">
+        <div class="container"><a class="second-nav__logo"><span>DC</span></a>
+          <nav class="menu">
+            <ul>
+              <li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
+              <li><a class="js-link js-anchor" href="#about">About</a></li>
+              <li><a class="js-link js-anchor" href="#experience">Experience</a></li>
+              <li><a class="js-link js-anchor" href="#portfolio">Portfolio</a></li>
+              <li><a class="js-link js-anchor" href="#hobbies">Hobbies</a></li>
+              <li><a class="js-link js-anchor" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Home section-->
+    <section class="home-section" id="home">
+      <div class="home-section__bg"></div>
+      <div class="home-section__overlay">
+        <div class="container">
+          <header class="home-section__header">
+            <h1>Daley Crowley</h1>
+            <h2>Content And Marketing Strategist</h2>
+          </header>
+        </div>
+      </div>
+    </section>
+    <!-- About section-->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          <header class="about-card__header">
+            <h2>Hi, I'm Daley</h2>
+            <h4>I'm a creative thinker with a passion for digital marketing.</h4>
+          </header>
+          <div class="about-card__info">
+            <p>On a sunny day, you can find me hiking, exploring, snowboarding, swimming, camping, kayaking, gardening, rollerblading or practicing yoga or gymnastics.</p><br>
+            <p>On a rainy day, I'm probably cooking, baking, embroidering, painting, reading, or planning my next adventure.</p>
+            <p class="about-card__info-status"><span>Current status:</span> Let me help you with your digital dreams!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience section-->
+    <section class="common-section" id="experience">
+      <div class="container">
+        <header class="common-section__header">
+          <h2>Experience</h2>
+        </header>
+        <div class="grid-container">
+          <ul class="experience">
+            <li class="experience__item"><img src="static/images/logos/TransparentLogo.png" alt="rochester cafe">
+              <blockquote>
+                <p>Designed and built website on WordPress.<br><br>Created marketing plan, preformed SEO audit & outlined social media roadmap.</p><a href="https://www.rochestercafe.com">Check out the site</a>
+                <cite><span class="name">Rochester Cafe</span><span class="role"> Marketing & Web Design Consultant</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item"><img src="static/images/logos/crieto logo.png" alt="criteo logo">
+              <blockquote>
+                <p>Managed, monitored and adjusted hundreds of digital retargeting campaigns.<br><br>Trained new hires and other internal teams on new products.</p><a href="https://www.criteo.com">Learn about Criteo</a>
+                <cite><span class="name">Criteo</span><span class="role"> Advertising Operations Specialist</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item"><img src="static/images/logos/dealer-logo.png" alt="Dealer.com logo">
+              <blockquote>
+                <p>Conducted client onboarding and built advertising strategies<br><br><b>Digital Campaign Coordinator</b><br> Created campaign content, analyzed and reported preformance.</p><a href="https://www.dealer.com">Learn about Dealer</a>
+                <cite><span class="name">Dealer.com</span><span class="role"> Advertising Onboarding Coordinator</span></cite>
+              </blockquote>
+            </li>
+          </ul>
+          <ul class="experience">
+            <li class="experience__item"><img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+              <blockquote>
+                <p class="icon icon_ql">Fusce aliquam lorem in ligula maximus, et fermentum velit ultricies. Sed quis pretium metus. Donec convallis pretium erat in varius. Sed ullamcorper, lacus vel euismod euismod, justo nibh tristique urna, ac sollicitudin nunc elit eget sem.</p><a href="https://www.earthhero.com">Earth Hero</a>
+                <cite><span class="name">EarthHero</span><span class="role"> Brand Badass</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item"><img src="static/images/logos/castleton-logo.png" alt="Castleton University logo">
+              <blockquote>
+                <p>Published journalist and newspaper staff. <br><br>Athletic Videographer for Northeast Sports Network (NSN).</p><a href="https://www.castleton.edu">CU</a>
+                <cite><span class="name">Castleton University</span><span class="role"> Major: Communications.<span class="role"> Minor: Public Relations.</span></span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item"><img src="static/images/logos/Vermont PBS.png" alt="Vermont PBS Logo">
+              <blockquote>
+                <p>Contacted community members and businesses to collaborate on event planning and participation.<br><br> Assisted in video package filming, producing, editing and sharing.</p><a href="https://www.vermontpbs.org">Learn More</a>
+                <cite><span class="name">Vermont PBS</span><span class="role"> Community Outreach Intern</span></cite>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio section-->
+    <section class="common-section" id="portfolio">
+      <header class="common-section__header">
+        <h2>portfolio</h2>
+        <p>Donec lorem ante, efficitur ut blandit eu, sollicitudin sed mi</p>
+      </header>
+      <div class="portfolio-wrap">
+        <div class="grid-container">
+          <div class="portfolio">
+            <figure class="portfolio__item"><img src="static/images/portfolio/4.jpg" alt="published articles">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Published Articles</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Country store email screen shot.png" alt="country store email">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Store-Wide Sale Email</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Grand reopening screen shot.png" alt="Grand re-opening">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">News Letter Email</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Rochester cafe email screen shot.png" alt="Cafe email">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Grand Re-Opening Flyer</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Cafe Instagram Story.png" alt="Online ordering ig">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Online Ordering At Rochester Cafe</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Country Store Instagram Story.png" alt="Country store ig">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Country Store Instagram Story</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Cafe Instagram Story2.png                                                       " alt="Sale IG Story">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Cafe Instagram Story</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Cafe Instagram Story3png.png" alt="Valentines day ig story">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow">Valentines Day IG Story</a></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hobbies section-->
+    <section class="common-section" id="hobbies">
+      <div class="container">
+        <header class="common-section__header">
+          <h2>Hobbies</h2>
+        </header>
+        <div class="grid-container">
+          <ul class="hobbies">
+            <li class="hobbies__step hobbies__step_research">
+              <div class="hobbies__step-icon icon icon_research is-active"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_research is-active">
+              <h3>@dailydaleynails</h3>
+              <p>Proin mattis ex vel turpis interdum, in fringilla nibh tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ipsum in diam aliquam sodales.</p>
+            </li>
+            <li class="hobbies__step hobbies__step_develop">
+              <div class="hobbies__step-icon icon icon_develop"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_develop">
+              <h3>embroidery</h3>
+              <p>Nullam laoreet lacus et ante consequat pharetra. Nam non felis tincidunt, auctor eros at, semper eros. Mauris feugiat a nibh et luctus.</p>
+            </li>
+            <li class="hobbies__step hobbies__step_deploy">
+              <div class="hobbies__step-icon icon icon_deploy"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_deploy">
+              <h3>Daley Vintage</h3>
+              <p>Donec lobortis, est iaculis rutrum feugiat, orci est ultrices mauris, in rhoncus dolor eros non sem. Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi, sit amet ultricies lectus nisl eu libero.</p>
+            </li>
+            <li class="hobbies__step hobbies__step_deliver">
+              <div class="hobbies__step-icon icon icon_deliver"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_deliver">
+              <h3>Cats</h3>
+              <p>Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi. Quisque est ante, faucibus a urna nec, vehicula pellentesque lectus.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts section-->
+    <div class="contacts-section" id="contacts">
+      <div class="container">
+        <section class="contact-card">
+          <header class="contact-card__header">
+            <h2>Contact information</h2>
+            <h4>Please reach out any time!</h4>
+          </header>
+          <div class="contact-info">
+            <div class="contact-info__logo">DC</div>
+            <div class="contact-info__group">
+              <div class="contact-info__vcard vcard">
+                <h4 class="fn org">Daley Crowley</h4>
+                <p class="role title">Content And Marketing Strategist</p>
+                <p class="icon icon_location"><a class="adr js-anchor" href="#gmap"><span class="country-name">USA</span>,&nbsp;<span class="locality">Boulder</span></a></p>
+                <p class="icon icon_mail"><a class="email" href="daleycrowley@yahoo.com">daleycrowley@yahoo.com</a></p>
+              </div>
+              <ul class="contact-info__social">
+                <li><a class="icon icon_twi" rel="nofollow">My Twitter</a></li>
+                <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="gmap" id="gmap"></div>
+    </div>
+    <!-- Footer-->
+    <footer class="main-footer">
+      <div class="container">
+        <p class="main-footer__copyright">&copy;&nbsp;<span>Daley Crowley</span></p><a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+        <p class="main-footer__links"><a href="https://www.linkedin.com/in/daley-crowley/">LinkedIn</a></p>
+      </div>
+    </footer>
+    <script src="static/js/body.min.js"></script>
+  </body>
+</html>
