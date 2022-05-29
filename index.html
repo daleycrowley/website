@@ -1,260 +1,252 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
-    <title>Daley Crowley</title>
-    <meta property="og:title" content="My Personal Website" />
-    <meta property="og:image" content="https://daleycrowley.com/assets/headshot3.JPG" />
-    <meta property="og:description" content="My hobbies, work experience, and portfolio." />
-    <meta name="author" content="Daley Crowley, daleycrowley@yahoo.com">
-    <meta name="description" content="My personal website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="language" content="EN_US">
-    <meta name="robots" content="index,follow" />
-    <meta name="keywords" content="your, tags" />
-    <meta name="subject" content="your website's subject">
-    <meta name="copyright" content="company name">
-    <meta name="abstract" content="My interests, hobbies, work experience, and portfolio.">
-    <meta name="topic" content="Daley Crowley">
-    <meta name="summary" content="My interests, hobbies, work experience, and portfolio.">
-    <meta name="classification" content="Business">
-    <meta name="designer" content="Daley Crowley">
-    <meta name="reply-to" content="daleycrowley@yahoo.com">
-    <meta name="owner" content="Daley Crowley">
-    <meta name="url" content="http://www.daleycrowley.com">
-    <meta name="identifier-URL" content="http://www.daleycrowley.com">
-    <meta name="directory" content="submission">
-    <meta name="category" content="Personal Site">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="General">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="navbar">
-        <h1>DALEY CROWLEY</h1>
-        <a href="https://www.linkedin.com/in/daley-crowley/">LinkedIn</a>
-    </div>
-    <section id="aboutMe" class="horizontalContent">
-        <div class="thoughtBubble horizontalContent">
-            <div>
-                <img src="assets/headshot2.JPG" height="300" width="210" id="headshot">
-            </div>
-            <div>
-                <p>Hi, I'm Daley. I'm a creative thinker with a passion for digital marketing.<br><br> In my free time on a sunny day, you can find me hiking, exploring, snowboarding,<br> swimming, camping, kayaking, gardening, rollerblading or practicing
-                    yoga or gymnastics.
-                    <br><br> On a rainy day, I'm probably cooking, baking, embroidering, painting, reading, <br> or planning my next adventure. <br>
-                </p>
-            </div>
+    <title>Daley Crowley | Portfolio template</title>
+    <meta name="description" content="Daley Crowley Personal Site">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/screen.min.css">
+    <link rel="stylesheet" href="static/css/custom.min.css">
+    <script src="static/js/head.min.js"></script>
+  </head>
+  <body>
+    <script>
+      progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+      if(window.attachEvent) {
+          window.attachEvent('onload', function(){ progressJs().end(); });
+      } else {
+          if(window.onload) {
+              var curronload = window.onload;
+              var newonload = function() {
+                  curronload();
+                  progressJs().end();
+              };
+              window.onload = newonload;
+          } else {
+              window.onload = function(){ progressJs().end(); };
+          }
+      }
+    </script>
+    <!-- Header-->
+    <header class="main-header">
+      <div class="first-nav">
+        <div class="container"><a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a></div>
+      </div>
+      <div class="second-nav js-nav">
+        <div class="container"><a class="second-nav__logo"><span>DC</span></a>
+          <nav class="menu">
+            <ul>
+              <li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
+              <li><a class="js-link js-anchor" href="#about">About</a></li>
+              <li><a class="js-link js-anchor" href="#experience">Experience</a></li>
+              <li><a class="js-link js-anchor" href="#portfolio">Portfolio</a></li>
+              <li><a class="js-link js-anchor" href="#hobbies">Hobbies</a></li>
+              <li><a class="js-link js-anchor" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
         </div>
-    </section>
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="horizontalContent fullHeight">
-            <div class="experienceBox">
-                <div class="experienceTop">
-                    <h3>Rochester Cafe</h3>
-                </div>
-                <div class="experienceBody">
-                    <img src="assets/TransparentLogo.png" alt="rochester cafe" class="experienceImage" height="55" width="55">
-                    <p class="experienceText">
-                        <b>Marketing & Web Design Consultant</b><br><br>Designed and built website on WordPress.<br><br>Created marketing plan, preformed SEO audit & outlined social media roadmap.
-                    </p>
-                    <a href="https://www.rochestercafe.com" target="_blank" class="btn">Check out the site</a>
-                </div>
-            </div>
-            <div class="experienceBox">
-                <div class="experienceTop">
-                    <h3>Criteo</h3>
-                </div>
-                <div class="experienceBody">
-                    <img src="assets/crieto logo.png" alt="criteo logo" class="experienceImage" height="30" width="130">
-                    <p class="experienceText">
-                        <b>Advertising Operations Specialist</b><br><br>Managed, monitored and adjusted hundreds of digital retargeting campaigns.<br><br>Trained new hires and other internal teams on new products.
-                    </p>
-                    <div>
-                        <a href="https://www.criteo.com" target="_blank" class="btn">Learn about Criteo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="experienceBox">
-                <div class="experienceTop">
-                    <h3>Dealer.com</h3>
-                </div>
-                <div class="experienceBody">
-                    <img src="assets/dealer-logo.png" alt="Dealer.com logo" class="experienceImage" height="30" width="150">
-                    <p class="experienceText">
-                        <b>Advertising Onboarding Coordinator</b><br>Conducted client onboarding and built advertising strategies<br><br><b>Digital Campaign Coordinator</b><br> Created campaign content, analyzed and reported preformance.
-                    </p>
-                    <a href="https://www.dealer.com" target="_blank" target="_blank" class="btn">Dealer.com</a>
-                </div>
-            </div>
-            <div class="experienceBox">
-                <div class="experienceTop">
-                    <h3>Castleton University</h3>
-                </div>
-                <div class="experienceBody">
-                    <img src="assets/castleton-logo.png" alt="Castleton University logo" class="experienceImage" height="40" width="150">
-                    <p class="experienceText">
-                        <b>Major: Communications. Minor: Public Relations.</b><br><br> Published journalist and newspaper staff. <br><br>Athletic Videographer for Northeast Sports Network (NSN).
-                    </p>
-                    <a href="https://www.castleton.edu" target="_blank" target="_blank" class="btn">CU</a>
-                </div>
-            </div>
-            <div class="experienceBox">
-                <div class="experienceTop">
-                    <h3>Vermont PBS</h3>
-                </div>
-                <div class="experienceBody">
-                    <img src="assets/Vermont PBS.png" alt="Vermont PBS Logo" class="experienceImage" height="35" width="45">
-                    <p class="experienceText">
-                        <b>Community Outreach Intern</b><br><br>Contacted community members and businesses to collaborate on event planning and participation.<br><br> Assisted in video package filming, producing, editing and sharing.
-                    </p>
-                    <a href="https://www.vermontpbs.org" target="_blank" class="btn">Learn More</a>
-                </div>
-            </div>
+      </div>
+    </header>
+    <!-- Home section-->
+    <section class="home-section" id="home">
+      <div class="home-section__bg"></div>
+      <div class="home-section__overlay">
+        <div class="container">
+          <header class="home-section__header">
+            <h1>Daley Crowley</h1>
+            <h2>Content And Marketing Strategist</h2>
+          </header>
         </div>
+      </div>
     </section>
-    <section id="portfolio">
+    <!-- About section-->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          <header class="about-card__header">
+            <h2>Hi, I'm Daley</h2>
+            <h4>I'm a creative thinker with a passion for digital marketing.</h4>
+          </header>
+          <div class="about-card__info">
+            <p>On a sunny day, you can find me hiking, exploring, snowboarding, swimming, camping, kayaking, gardening, rollerblading or practicing yoga or gymnastics.</p><br>
+            <p>On a rainy day, I'm probably cooking, baking, embroidering, painting, reading, or planning my next adventure.</p>
+            <p class="about-card__info-status"><span>Current status:</span> Let me help you with your digital dreams!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience section-->
+    <section class="common-section" id="experience">
+      <div class="container">
+        <header class="common-section__header">
+          <h2>Experience</h2>
+        </header>
+        <div class="grid-container">
+          <ul class="experience">
+            <li class="experience__item">
+              <div class="parent"><img src="static/images/logos/TransparentLogo.png" alt="rochester cafe"></div>
+              <blockquote>
+                <p>Designed and built website on WordPress.<br><br>Created marketing plan, preformed SEO audit & outlined social media roadmap.</p><a href="https://www.rochestercafe.com" target="_blank">Check out the site</a>
+                <cite><span class="name">Rochester Cafe</span><span class="role"> Marketing & Web Design Consultant</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item">
+              <div class="parent"><img src="static/images/logos/crieto logo.png" alt="criteo logo"></div>
+              <blockquote>
+                <p>Managed, monitored and adjusted hundreds of digital retargeting campaigns.<br><br>Trained new hires and other internal teams on new products.</p><a href="https://www.criteo.com" target="_blank">Learn about Criteo</a>
+                <cite><span class="name">Criteo</span><span class="role"> Advertising Operations Specialist</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item">
+              <div class="parent"><img src="static/images/logos/dealer-logo.png" alt="Dealer.com logo"></div>
+              <blockquote>
+                <p>Conducted client onboarding and built advertising strategies<br><br><b>Digital Campaign Coordinator</b><br> Created campaign content, analyzed and reported preformance.</p><a href="https://www.dealer.com" target="_blank">Learn about Dealer</a>
+                <cite><span class="name">Dealer.com</span><span class="role"> Advertising Onboarding Coordinator</span></cite>
+              </blockquote>
+            </li>
+          </ul>
+          <ul class="experience">
+            <li class="experience__item">
+              <div class="parent"><img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet"></div>
+              <blockquote>
+                <p class="icon icon_ql">Fusce aliquam lorem in ligula maximus, et fermentum velit ultricies. Sed quis pretium metus. Donec convallis pretium erat in varius. Sed ullamcorper, lacus vel euismod euismod, justo nibh tristique urna, ac sollicitudin nunc elit eget sem.</p><a href="https://www.earthhero.com" target="_blank">Earth Hero</a>
+                <cite><span class="name">EarthHero</span><span class="role"> Brand Badass</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item">
+              <div class="parent"><img src="static/images/logos/castleton-logo.png" alt="Castleton University logo"></div>
+              <blockquote>
+                <p>Published journalist and newspaper staff. <br><br>Athletic Videographer for Northeast Sports Network (NSN).</p><a href="https://www.castleton.edu" target="_blank">CU</a>
+                <cite><span class="name">Castleton University</span><span class="role"> Major: Communications. Minor: Public Relations.</span></cite>
+              </blockquote>
+            </li>
+            <li class="experience__item">
+              <div class="parent"><img src="static/images/logos/Vermont PBS.png" alt="Vermont PBS Logo"></div>
+              <blockquote>
+                <p>Contacted community members and businesses to collaborate on event planning and participation.<br><br> Assisted in video package filming, producing, editing and sharing.</p><a href="https://www.vermontpbs.org" target="_blank">Learn More</a>
+                <cite><span class="name">Vermont PBS</span><span class="role"> Community Outreach Intern</span></cite>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio section-->
+    <section class="common-section" id="portfolio">
+      <header class="common-section__header">
         <h2>Portfolio</h2>
-        <div class="fullHeight collapsibleContainer">
-
-            <button type="button" class="collapsible">Published Articles</button>
-            <div class="portfolioContent">
-                <ul>
-                    <li>Profile piece: <a href="http://www.castletonspartan.com/2014/12/02/jailhouse-to-farmhouse/" target="_blank">“Jailhouse to Farmhouse”</a></li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Her life before Castleton”</a> Pg. 1
-                    </li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“What makes a good professor?”</a> Pg. 4</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Local efforts pay off with award”</a> Pg. 11</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Castleton students unfazed by violent world”</a> Pg. 12</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“An experience of a lifetime”</a> Pg. 17</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Castleton kicks off film fest”</a> Pg. 21</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Career fair provides opportunities for all students”</a> Pg. 27</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Duo opens Depot Café in old train depot”</a> Pg. 28</li>
-                    <li><a href="https://drive.google.com/file/d/1LurgEuaUbOLJLeCnUP4LKfo5EK7X-ji1/view?usp=sharing" target="_blank">“Third annual scholar celebration”</a> Pg. 46</li>
-                </ul>
-            </div>
-
-            <button type="button" class="collapsible">My Videos</button>
-            <div class="portfolioContent">
-                <div class="videoContainer">
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3qAMG1fOZUc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>
-                            <a href="https://www.youtube.com/embed/kT-vt5vnJm8" target="_blank">Summer Video</a> shot on iPhone 10x
-                        </p>
-                    </div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kT-vt5vnJm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>
-                            <a href="https://www.youtube.com/watch?v=kT-vt5vnJm8" target="_blank">Rollerblading Video</a> shot on iPhone 10x
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <button type="button" class="collapsible">Social Media Examples</button>
-            <div class="portfolioContent">
-                <div class="socialContainer">
-                    <div>
-                        <img src="assets/Cafe Instagram Story.png" alt="online ordering instagram story" height="340" width="220">
-                    </div>
-                    <div>
-                        <img src="assets/Country Store Instagram Story.png" alt="country store instagram story" height="340" width="220">
-                    </div>
-                    <div>
-                        <img src="assets/Cafe Instagram Story2.png" alt="sale instagram story" height="340" width="220">
-                    </div>
-                    <div>
-                        <img src="assets/Cafe Instagram Story3png.png" alt="valentines day instagram story" height="340" width="220">
-                    </div>
-                </div>
-            </div>
-
-            <button type="button" class="collapsible">Email Marketing</button>
-            <div class="portfolioContent">
-                <div class="socialContainer">
-                    <div>
-                        <img src="assets/Country store email screen shot.png" alt="Country Store email" height="240" width="370">
-                        <p>
-                            <a href="assets/Rochester Country Store Email Newsletter.pdf" target="_blank">Store-Wide Sale Email</a>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="assets/Grand reopening screen shot.png" alt="grand re-opening" height="240" width="370">
-                        <p>
-                            <a href="assets/Rochester Cafe Email Newsletter.pdf" target="_blank">Newsletter Email</a>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="assets/Rochester cafe email screen shot.png" alt="Cafe email" height="240" width="370">
-                        <p>
-                            <a href="assets/Rochester Cafe Re-Opening Flyer.pdf" target="_blank">Grand Re-Opening Flyer</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <p>Some cool stuff I've done!</p>
+      </header>
+      <div class="portfolio-wrap">
+        <div class="grid-container">
+          <div class="portfolio">
+            <figure class="portfolio__item"><img src="static/images/portfolio/4.jpg" alt="published articles">
+              <figcaption><a class="icon icon_link" href="http://www.castletonspartan.com/2014/12/02/jailhouse-to-farmhouse/" rel="nofollow" target="_blank">Published Articles</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Country store email screen shot.png" alt="country store email">
+              <figcaption><a class="icon icon_link" href="static/images/Rochester Country Store Email Newsletter.pdf" rel="nofollow" target="_blank">Store-Wide Sale Email</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Grand reopening screen shot.png" alt="Grand re-opening">
+              <figcaption><a class="icon icon_link" href="static/images/Rochester Cafe Re-Opening Flyer.pdf" rel="nofollow" target="_blank">Grand Re-Opening Flyer</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Rochester cafe email screen shot.png" alt="Cafe email">
+              <figcaption><a class="icon icon_link" href="static/images/Rochester Cafe Email Newsletter.pdf" rel="nofollow" target="_blank">News Letter Email</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Cafe Instagram Story.png" alt="Online ordering ig">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow" target="_blank">Online Ordering At Rochester Cafe</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Country Store Instagram Story.png" alt="Country store ig">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow" target="_blank">Country Store Instagram Story</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Cafe Instagram Story2.png" alt="Sale IG Story">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow" target="_blank">Cafe Instagram Story</a></figcaption>
+            </figure>
+            <figure class="portfolio__item"><img src="static/images/portfolio/Cafe Instagram Story3png.png" alt="Valentines day ig story">
+              <figcaption><a class="icon icon_link" href="#" rel="nofollow" target="_blank">Valentines Day IG Story</a></figcaption>
+            </figure>
+          </div>
         </div>
-
+      </div>
     </section>
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <div class="horizontalContent fullHeight">
-            <div id="nailsParent" class="hobbyParent">
-                <div id="nailsShowing" class="hobbiesBox transition hobbyChild showHobby">
-                    <h2>@dailydaleynails</h2>
-                </div>
-                <div id="nailsReveal" class="hobbyRevealContainer transition hobbyChild hideHobby">
-                    <a href="https://www.instagram.com/dailydaleynails/" target="_blank" class="btn"><button>My Nail Art Instagram</button></a>
-                </div>
-            </div>
-            <div id="embroideryParent" class="hobbyParent">
-                <div id="embroideryShowing" class="hobbiesBox transition hobbyChild showHobby">
-                    <h2>embroidery</h2>
-                </div>
-                <div id="embroideryReveal" class="hobbyRevealContainer transition hobbyChild hideHobby">
-                    <a href="" target="_blank" class="btn"><button>My Projects</button></a>
-                </div>
-            </div>
-            <div id="vintageParent" class="hobbyParent">
-                <div id="vintageShowing" class="hobbiesBox transition hobbyChild showHobby">
-                    <h2>Daley Vintage</h2>
-                </div>
-                <div id="vintageReveal" class="hobbyRevealContainer transition hobbyChild hideHobby">
-                    <a href="https://www.etsy.com/shop/DaleyVintage?ele=shop_open" target="_blank" class="btn"><button>My Etsy Shop</button></a>
-                </div>
-            </div>
+    <!-- Hobbies section-->
+    <section class="common-section" id="hobbies">
+      <div class="container">
+        <header class="common-section__header">
+          <h2>Hobbies</h2>
+        </header>
+        <div class="grid-container">
+          <ul class="hobbies">
+            <li class="hobbies__step hobbies__step_research">
+              <div class="hobbies__step-icon icon icon_research is-active"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_research is-active">
+              <h3>@dailydaleynails</h3>
+            </li>
+            <li class="hobbies__step hobbies__step_develop">
+              <div class="hobbies__step-icon icon icon_develop"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_develop">
+              <h3>embroidery</h3>
+              <p>Fave quarantine activity</p>
+            </li>
+            <li class="hobbies__step hobbies__step_deploy">
+              <div class="hobbies__step-icon icon icon_deploy"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_deploy">
+              <h3>Daley Vintage</h3>
+            </li>
+            <li class="hobbies__step hobbies__step_deliver">
+              <div class="hobbies__step-icon icon icon_deliver"></div>
+            </li>
+            <li class="hobbies__step-info hobbies__step-info_deliver">
+              <h3>Cats</h3>
+              <p>I luv cats</p>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
-
-    <section id="photoSection">
-        <h2></h2>
-        <div class="horizontalContent fullHeight">
-            <div class="socialContainer">
-                <div>
-                    <img src="assets/photos/hanging.JPG" alt="Hammock" class="photoImage" height="400" width="300">
-                </div>
-                <div>
-                    <img src="assets/photos/hiking.jpg" alt="hiking mount washington" class="photoImage" height="400" width="300">
-                </div>
-                <div>
-                    <img src="assets/photos/handstand.jpg" alt="handstand on the beach" class="photoImage" height="400" width="300">
-                </div>
-                <div>
-                    <img src="assets/photos/kayaking.JPG" alt="kayaking" class="photoImage" height="400" width="300">
-                </div>
+    <!-- Contacts section-->
+    <div class="contacts-section" id="contacts">
+      <div class="container">
+        <section class="contact-card">
+          <header class="contact-card__header">
+            <h2>Contact information</h2>
+            <h4>Please reach out any time!</h4>
+          </header>
+          <div class="contact-info">
+            <div class="contact-info__logo">DC</div>
+            <div class="contact-info__group">
+              <div class="contact-info__vcard vcard">
+                <h4 class="fn org">Daley Crowley</h4>
+                <p class="role title">Content And Marketing Strategist</p>
+                <p class="icon icon_location"><a class="adr js-anchor" href="#gmap"><span class="country-name">USA</span>,&nbsp;<span class="locality">Boulder</span></a></p>
+                <p class="icon icon_mail"><a class="email" href="daleycrowley@yahoo.com">daleycrowley@yahoo.com</a></p>
+              </div>
+              <ul class="contact-info__social">
+                <li><a class="icon icon_twi" rel="nofollow">My Twitter</a></li>
+                <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
+              </ul>
             </div>
-        </div>
-    </section>
-    </section>
-</body>
-<script src="js/daley.js"></script>
-
+          </div>
+        </section>
+      </div>
+      <div class="gmap" id="gmap"></div>
+    </div>
+    <!-- Footer-->
+    <footer class="main-footer">
+      <div class="container">
+        <p class="main-footer__copyright">&copy;&nbsp;<span>Daley Crowley</span></p><a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+        <p class="main-footer__links"><a href="https://www.linkedin.com/in/daley-crowley/" target="_blank">LinkedIn</a></p>
+      </div>
+    </footer>
+    <script src="static/js/body.min.js"></script>
+  </body>
 </html>
