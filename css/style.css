@@ -127,15 +127,14 @@ section {
 
 #experience .experienceBox {
     margin: 8px;
+    width: 250px;
+    border: 2px solid #e0c0a9;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 #experience .experienceBox .experienceTop {
-    position: relative;
-    z-index: 2;
-    height: 200px;
-    width: 200px;
-    transform: translateY(52%);
-    transition: 0.5s;
+    height: 40px;
     background-color: #e0c0a9;
     text-align: center;
     display: flex;
@@ -145,14 +144,10 @@ section {
 }
 
 #experience .experienceBox .experienceBody {
-    z-index: 1;
     box-sizing: border-box;
     padding: .5em;
-    height: 200px;
     background: white;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.056), 0 6.7px 5.3px rgba(0, 0, 0, 0.081), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.119), 0 41.8px 33.4px rgba(0, 0, 0, 0.144), 0 100px 80px rgba(0, 0, 0, 0.2);
-    transform: translateY(-50%);
-    transition: 0.5s;
+    height: fit-content;
 }
 
 #experience .experienceBox .experienceBody .experienceImage {
@@ -160,9 +155,7 @@ section {
 }
 
 #experience .experienceBox .experienceBody .experienceText {
-    width: 170px;
-    height: 170px;
-    font-size: 5px;
+    font-size: 14px;
 }
 
 #experience .experienceBox .experienceBody .btn {
@@ -173,7 +166,7 @@ section {
     border: 1px solid black;
     border-radius: 0.25em;
     transition: 0.5s;
-    display: none;
+    display: block;
 }
 
 #experience .experienceBox .experienceBody .btn:hover {
@@ -181,38 +174,11 @@ section {
     background: black;
 }
 
-#experience .experienceBox:hover .experienceBody .btn {
-    display: block;
-}
-
-#experience .experienceBox:hover .experienceTop {
-    transform: translateY(2%);
-    height: 40px;
-}
-
-#experience .experienceBox:hover .experienceBody .experienceText {
-    font-size: 12px;
-}
-
-#experience .experienceBox:hover .experienceBody {
-    transform: translateY(0);
-    height: fit-content;
-}
-
 
 /* Hobbies section */
 
 #hobbies {
     background-color: #FFFFFF;
-}
-
-.hobbiesBox {
-    background-color: #e0c0a9;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .hobbyParent {
@@ -225,15 +191,6 @@ section {
 .hobbyChild {
     width: 250px;
     height: 250px;
-    position: absolute;
-}
-
-.hideHobby {
-    opacity: 0;
-}
-
-.showHobby {
-    opacity: 1;
 }
 
 #hobbies img {
@@ -273,6 +230,7 @@ section {
     background-color: #ebd7c9;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 
