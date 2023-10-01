@@ -7,7 +7,8 @@ h1 {
 
 h2 {
     margin: 0;
-    padding-top: 10px;
+    margin-bottom: 1em;
+    margin-top: 1em;
     text-align: center;
 }
 
@@ -36,15 +37,15 @@ ol li {
 }
 
 body {
-    background-color: #ffe8d6;
+    /* background-color: #ffe8d6; */
     margin: 0 auto;
 }
-
+/* 
 @media screen and (min-width: 800px) {
     section {
-        min-height: 100vh;
+        min-height: 60vh;
     }
-}
+} */
 
 section {
     width: 100%;
@@ -60,8 +61,21 @@ section {
     z-index: 99;
 }
 
-.navbar a {
-    float: right;
+.navbar #linkedin a {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 18px;
+    text-align: center;
+    color: rgb(9, 156, 161);
+    font-weight: 400;
+}
+
+.navbar #portfolio a {
+    float: left;
     position: absolute;
     right: 0;
     top: 0;
@@ -69,12 +83,13 @@ section {
     padding: 14px 16px;
     margin: 18px;
     text-align: center;
-    color: cadetblue;
+    color: rgb(9, 156, 161);
+    font-weight: 400;
 }
 
 .navbar a:hover {
-    background: cornflowerblue;
-    color: black;
+    background: cadetblue;
+    color: black !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -109,8 +124,14 @@ section {
 }
 
 #aboutMe {
-    background-color: #FFEDD8;
+    background-image: url(../assets/photos/bg.jpg);
     padding-top: 40px;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+#aboutMeContent {
+    margin: 1em;
 }
 
 .thoughtBubble {
@@ -125,16 +146,34 @@ section {
     background-color: #FFFFFF;
 }
 
+.experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+}
+
+@media only screen and (max-width: 768px) {
+    .experienceGrid {
+       display: block;
+    }
+}
+
 #experience .experienceBox {
     margin: 8px;
-    width: 250px;
     border: 2px solid #e0c0a9;
     border-radius: 10px;
     overflow: hidden;
 }
 
+#experience .experienceLogoContainer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #experience .experienceBox .experienceTop {
-    height: 40px;
+    height: 10%;
     background-color: #e0c0a9;
     text-align: center;
     display: flex;
@@ -147,7 +186,11 @@ section {
     box-sizing: border-box;
     padding: .5em;
     background: white;
-    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    height: 90%;
 }
 
 #experience .experienceBox .experienceBody .experienceImage {
@@ -156,6 +199,7 @@ section {
 
 #experience .experienceBox .experienceBody .experienceText {
     font-size: 14px;
+    margin: 0;
 }
 
 #experience .experienceBox .experienceBody .btn {
@@ -181,16 +225,10 @@ section {
     background-color: #FFFFFF;
 }
 
-.hobbyParent {
-    height: 250px;
-    width: 250px;
-    cursor: pointer;
-    margin: 8px;
-}
-
 .hobbyChild {
     width: 250px;
     height: 250px;
+    margin: 1em;
 }
 
 #hobbies img {
@@ -202,10 +240,12 @@ section {
 
 #nailsReveal {
     background-image: url("../assets/nails.jpg");
+    cursor: pointer;
 }
 
 #vintageReveal {
     background-image: url("../assets/vintage.png");
+    cursor: pointer;
 }
 
 #embroideryReveal {
@@ -271,21 +311,6 @@ section {
     background-color: #e0c0a9;
 }
 
-.socialContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.socialContainer img {
-    margin: 10px;
-}
-
-.socialContainer p {
-    text-align: center;
-}
-
-
 /* Style the collapsible content. Note: hidden by default */
 
 .portfolioContent {
@@ -312,9 +337,15 @@ section {
 /* photo section */
 
 #photoSection {
+    margin-top: 1em;
     background-color: #FFEDD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .photoImage {
-    margin: 3;
+    margin: 1em;
 }
