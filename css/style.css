@@ -40,6 +40,7 @@ body {
     /* background-color: #ffe8d6; */
     margin: 0 auto;
 }
+
 /* 
 @media screen and (min-width: 800px) {
     section {
@@ -96,21 +97,35 @@ section {
     .navbar h1 {
         font-size: 1.3em;
     }
+
     .navbar a {
-        float: none;
-        position: relative;
-        padding: 0;
-        margin: 0 auto;
+        float: none !important;
+        display: block !important;
+        position: relative !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
     }
+
     .navbar {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    #socialLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
     }
 }
 
-.navbar h1 {
+/* .navbar h1 {
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 .transition {
     transition: opacity 1s ease-in;
@@ -154,7 +169,7 @@ section {
 
 @media only screen and (max-width: 768px) {
     .experienceGrid {
-       display: block;
+        display: block;
     }
 }
 
@@ -271,15 +286,11 @@ section {
     outline: none;
     border: none;
     cursor: pointer;
+    color: black;
 }
 
 
 /* Portfolio */
-
-#portfolio {
-    background-color: #FFEDD8;
-}
-
 .videoContainer {
     display: flex;
     align-items: center;
